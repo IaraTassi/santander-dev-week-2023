@@ -13,9 +13,9 @@ public class Account {
     private String number;
 
     private String agency;
-    @Column(nullable = false, scale = 13, precision = 2)
+    @Column(nullable = false, precision = 13, scale = 2)
     private BigDecimal balance;
-    @Column(nullable = false, name = "additional_limit", scale = 13, precision = 2)
+    @Column(nullable = false, name = "additional_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
     public Long getId() {
